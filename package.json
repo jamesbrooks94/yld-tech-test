@@ -8,5 +8,8 @@
     "@babel/preset-env": "^7.4.4",
     "babel-jest": "^24.7.1",
     "jest": "^24.7.1"
+  },
+  "scripts": {
+    "test:watch": "jest --watch"
   }
 }
