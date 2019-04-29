@@ -5,7 +5,7 @@ export const Lazy = () => {
 
   const evaluate = array =>
     array.map(item =>
-      functionArray.reduce(
+      functionsArray.reduce(
         (lastValue, currentFunction) => currentFunction(lastValue),
         item
       )
