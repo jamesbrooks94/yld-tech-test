@@ -1,7 +1,9 @@
 export const Lazy = () => {
   const functionsArray = []
 
-  const add = fnToAdd => functionsArray.push(fnToAdd)
+  const add = (fn, ...args) => {
+    functionsArray.push(param => fn(...args, param))
+  }
 
   const evaluate = array =>
     array.map(item =>
